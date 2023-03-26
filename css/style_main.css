@@ -15,13 +15,27 @@ main {
   padding-right: 0.1em;
 }
 .card-front {
-  width: 100%;
+  width: 75%;
   height: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   background-image: url("../images/bg-card-front.png");
   background-repeat: no-repeat;
 }
-.card-logo {
+.logo {
+  width: 100%;
+  height: 50%;
+}
+.logo-img {
   padding: 1.2em;
+}
+.p-number {
+  width: 100%;
+  padding: 0.5em;
+}
+.p-name {
+  width: 50%;
 }
 .card-back {
   width: 100%;
@@ -30,6 +44,10 @@ main {
   background-image: url("../images/bg-card-back.png");
   background-repeat: no-repeat;
   margin-left: 6.5em;
+}
+.card-back p {
+  text-align: center;
+  height: 250px;
 }
 .dados {
   width: 40%;
