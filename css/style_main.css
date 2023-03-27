@@ -7,48 +7,35 @@ main {
 }
 .card {
   width: 40%;
-  height: 470px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding-left: 13em;
   padding-right: 0.1em;
 }
+
 .card-front {
-  width: 75%;
-  height: 45%;
+  width: 71%;
+  height: 44%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   background-image: url("../images/bg-card-front.png");
   background-repeat: no-repeat;
+  background-color: brown;
 }
-.logo {
-  width: 100%;
-  height: 50%;
-}
-.logo-img {
-  padding: 1.2em;
-}
-.p-number {
-  width: 100%;
-  padding: 0.5em;
-}
-.p-name {
-  width: 50%;
-}
+
 .card-back {
-  width: 100%;
-  height: 45%;
+  width: 62%;
+  height: 44%;
   padding-left: 3em;
   background-image: url("../images/bg-card-back.png");
   background-repeat: no-repeat;
   margin-left: 6.5em;
+  background-color: blue;
 }
-.card-back p {
-  text-align: center;
-  height: 250px;
-}
+
 .dados {
   width: 40%;
   display: flex;
