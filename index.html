@@ -30,13 +30,12 @@
           <div class="logo">
             <img src="images/card-logo.svg" alt="" class="logo-img" />
           </div>
-          <p class="p-number">NUMBER</p>
-          <p class="p-name">Nome</p>
-          <p class="p-date">Data Validade</p>
-          <p class="branco"></p>
+          <p class="p-number" id="numberCadastrado"></p>
+          <p class="p-name" id="nameCadastrado"></p>
+          <p class="p-date" id="dataExpCadastrado"></p>
         </div>
         <div class="card-back">
-          <p class="p-cvc">CVC</p>
+          <p class="p-cvc" id="cvcCadastrado"></p>
         </div>
       </div>
       <div class="dados">
@@ -44,19 +43,35 @@
         <input
           type="text"
           class="input-name"
+          id="name"
           placeholder="e.g. Jane Appleseed"
         />
         <label for="number" class="label-number"> CARD NUMBER</label>
         <input
-          type="number"
+          type="text"
+          id="number"
           class="input-number"
           placeholder="e.g. 1234 5678 9123 0000 "
         />
         <label for="date-exp" class="label-date">EXP.DATE (MM/YY)</label>
         <label for="cvc" class="label-cvc">CVC</label>
-        <input type="date" class="input-date" placeholder="MM / yy" />
-        <input type="number" class="input-cvc" placeholder="e.g. 123" />
-        <button type="submit">Confirm</button>
+        <input type="date" class="input-date" placeholder="MM / yy" / id="date">
+        <input
+          type="number"
+          class="input-cvc"
+          placeholder="e.g. 123"
+          id="cvc"
+        />
+        <button id="confirm">Confirm</button>
+      </div>
+      <div class="register hidden">
+        <div class="concluded">
+          <img src="images/icon-complete.svg" alt="" class="concluded-img" />
+        </div>
+
+        <h1>THANK YOU!</h1>
+        <h2>We've added your card details</h2>
+        <button id="confirm">Continu</button>
       </div>
     </main>
     <footer>
@@ -67,5 +82,6 @@
         >. Coded by <a href="#">Mayra Malaquias</a>.
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
