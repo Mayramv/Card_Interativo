@@ -6,9 +6,12 @@
     <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,100;1,400;1,900&family=Space+Grotesk:wght@500&family=Space+Mono:ital,wght@0,700;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,100;1,400;1,900&family=Space+Grotesk:wght@300;500&family=Space+Mono:ital,wght@0,700;1,700&display=swap"
       rel="stylesheet"
+    />
     />
     <link
       rel="icon"
@@ -68,10 +71,11 @@
         <div class="concluded">
           <img src="images/icon-complete.svg" alt="" class="concluded-img" />
         </div>
-
         <h1>THANK YOU!</h1>
         <h2>We've added your card details</h2>
-        <button id="confirm">Continu</button>
+        <button id="confirm" onclick="window.location.reload()">
+          Continue
+        </button>
       </div>
     </main>
     <footer>
