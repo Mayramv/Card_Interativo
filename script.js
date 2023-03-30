@@ -3,18 +3,21 @@ const register = document.querySelector(".register");
 const confirm = document.querySelector("#confirm");
 const nome = document.querySelector("#name");
 const number = document.querySelector("#number");
-const dateExp = document.querySelector("#date");
+const dateExpMM = document.querySelector("#dateMM");
+const dateExpYY = document.querySelector("#dateYY");
 const cvc = document.querySelector("#cvc");
 
 const numberCadastrado = document.querySelector("#numberCadastrado");
 const nameCadastrado = document.querySelector("#nameCadastrado");
-const dataExpCadastrado = document.querySelector("#dataExpCadastrado");
+const dataMMExpCadastrado = document.querySelector("#dataMMExpCadastrado");
+const dataYYExpCadastrado = document.querySelector("#dataYYExpCadastrado");
 const cvcCadastrado = document.querySelector("#cvcCadastrado");
 
 function recebe() {
   nameCadastrado.innerHTML = nome.value;
   numberCadastrado.innerHTML = number.value;
-  dataExpCadastrado.innerHTML = dateExp.value;
+  dataMMExpCadastrado.innerHTML = dateExpMM.value + "/";
+  dataYYExpCadastrado.innerHTML = dateExpYY.value;
   cvcCadastrado.innerHTML = cvc.value;
 }
 let cadastroCompleto = false;
@@ -27,8 +30,10 @@ function valida() {
     alert("Numero de cartao invalido");
   } else if (number.value.length < 19) {
     alert("Numero de cartao incompleto");
-  } else if (dateExp.value == "") {
-    alert("Preencha a data de validade do cartao");
+  } else if (dateExpMM.value == "") {
+    alert("Preencha o mes de validade do cartao");
+  } else if (dateExpYY.value == "") {
+    alert("Preencha o ano de validade do cartao");
   } else if (cvc.value == "") {
     alert("Preencha o campo cvc");
   } else if (cvc.value.length > 3 || cvc.value[0] == 0) {

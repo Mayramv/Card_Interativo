@@ -51,8 +51,11 @@ p {
 
   font-size: 12px;
 }
-.p-date {
-  width: 30%;
+.p-dateMM {
+  width: 9%;
+}
+.p-dateYY {
+  width: 6%;
 }
 .card-back {
   width: 62%;
@@ -97,17 +100,23 @@ p {
   width: 40%;
   color: hsl(279, 6%, 55%);
   font-size: 14px;
-  padding: 0.7em;
+  padding-top: 1em;
+  padding-left: 0.1em;
+  padding-bottom: 0.5em;
 }
 .label-cvc {
   width: 30%;
   color: rgb(94, 91, 91);
   font-size: 14px;
-  padding: 0.7em;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+  padding-right: 4.5em;
 }
 
-.input-date {
-  width: 30%;
+.dateMM,
+.dateYY {
+  width: 10%;
   padding: 10px;
   margin-right: 1em;
   border-radius: 7px;

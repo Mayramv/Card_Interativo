@@ -33,12 +33,13 @@
           <div class="logo">
             <img src="images/card-logo.svg" alt="" class="logo-img" />
           </div>
-          <p class="p-number" id="numberCadastrado"></p>
-          <p class="p-name" id="nameCadastrado"></p>
-          <p class="p-date" id="dataExpCadastrado"></p>
+          <p class="p-number" id="numberCadastrado">0000 0000 0000 0000</p>
+          <p class="p-name" id="nameCadastrado">Nome sobrenome</p>
+          <p class="p-dateMM" id="dataMMExpCadastrado">00/</p>
+          <p class="p-dateYY" id="dataYYExpCadastrado">00</p>
         </div>
         <div class="card-back">
-          <p class="p-cvc" id="cvcCadastrado"></p>
+          <p class="p-cvc" id="cvcCadastrado">000</p>
         </div>
       </div>
       <div class="dados">
@@ -55,15 +56,32 @@
           id="number"
           class="input-number"
           placeholder="e.g. 1234 5678 9123 0000 "
+          maxlength="19"
         />
         <label for="date-exp" class="label-date">EXP.DATE (MM/YY)</label>
         <label for="cvc" class="label-cvc">CVC</label>
-        <input type="date" class="input-date" placeholder="MM / yy" / id="date">
+        <input
+          type="number"
+          class="dateMM"
+          id="dateMM"
+          placeholder="MM"
+          required
+          maxlength="2"
+        />
+        <input
+          type="number"
+          class="dateYY"
+          id="dateYY"
+          placeholder="AA"
+          required
+          maxlength="2"
+        />
         <input
           type="number"
           class="input-cvc"
           placeholder="e.g. 123"
           id="cvc"
+          maxlength="2"
         />
         <button id="confirm">Confirm</button>
       </div>
