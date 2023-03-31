@@ -32,8 +32,16 @@ function valida() {
     alert("Numero de cartao incompleto");
   } else if (dateExpMM.value == "") {
     alert("Preencha o mes de validade do cartao");
+  } else if (dateExpMM.value.length > 2 || cvc.value[0] == 0) {
+    alert("Mes  de validade invalido");
+  } else if (dateExpMM.value.length < 2) {
+    alert("Mes de validade  incompleto");
   } else if (dateExpYY.value == "") {
     alert("Preencha o ano de validade do cartao");
+  } else if (dateExpYY.value.length > 2 || cvc.value[0] == 0) {
+    alert("Ano  de validade invalido");
+  } else if (dateExpYY.value.length < 2) {
+    alert("Mes de validade  incompleto");
   } else if (cvc.value == "") {
     alert("Preencha o campo cvc");
   } else if (cvc.value.length > 3 || cvc.value[0] == 0) {
